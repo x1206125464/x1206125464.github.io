@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Island</title>
+  <subtitle>record my life</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://x1206125464.com/"/>
+  <updated>2017-08-01T09:07:34.161Z</updated>
+  <id>http://x1206125464.com/</id>
+  
+  <author>
+    <name>Alger</name>
+    <email>1206125464@qq.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://x1206125464.com/2017/08/01/test/"/>
+    <id>http://x1206125464.com/2017/08/01/test/</id>
+    <published>2017-08-01T08:07:20.000Z</published>
+    <updated>2017-08-01T09:07:34.161Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Testing" scheme="http://x1206125464.com/categories/Testing/"/>
+    
+    
+  </entry>
+  
+</feed>
