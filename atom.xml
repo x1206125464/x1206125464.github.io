@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://x1206125464.com/"/>
-  <updated>2017-08-01T09:07:34.161Z</updated>
+  <updated>2017-08-02T01:56:41.573Z</updated>
   <id>http://x1206125464.com/</id>
   
   <author>
@@ -16,18 +16,30 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test</title>
+    <title>搭建博客（一）：基于Hexo和Github的博客搭建</title>
     <link href="http://x1206125464.com/2017/08/01/test/"/>
     <id>http://x1206125464.com/2017/08/01/test/</id>
     <published>2017-08-01T08:07:20.000Z</published>
-    <updated>2017-08-01T09:07:34.161Z</updated>
+    <updated>2017-08-02T01:56:41.573Z</updated>
+    
+    <content type="html"><![CDATA[<p>开始</p>
+<p>参考：<br><a href="http://www.jianshu.com/p/701b1095da11" target="_blank" rel="external">http://www.jianshu.com/p/701b1095da11</a><br><a href="http://www.jianshu.com/p/017e01718d41" target="_blank" rel="external">http://www.jianshu.com/p/017e01718d41</a><br><a href="http://www.jianshu.com/p/e99ed60390a8" target="_blank" rel="external">http://www.jianshu.com/p/e99ed60390a8</a><br><a href="http://blog.csdn.net/crow1108/article/details/50445671" target="_blank" rel="external">http://blog.csdn.net/crow1108/article/details/50445671</a><br><a href="http://blog.csdn.net/hustpzb/article/details/8230454/" target="_blank" rel="external">http://blog.csdn.net/hustpzb/article/details/8230454/</a></p>
+<p>环境准备：</p>
+]]></content>
     
     <summary type="html">
     
+      &lt;p&gt;开始&lt;/p&gt;
+&lt;p&gt;参考：&lt;br&gt;&lt;a href=&quot;http://www.jianshu.com/p/701b1095da11&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/701b1095da11&lt;/a&gt;
+    
     </summary>
     
-      <category term="Testing" scheme="http://x1206125464.com/categories/Testing/"/>
+      <category term="搭建博客" scheme="http://x1206125464.com/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
     
+    
+      <category term="hexo" scheme="http://x1206125464.com/tags/hexo/"/>
+    
+      <category term="github" scheme="http://x1206125464.com/tags/github/"/>
     
   </entry>
   
