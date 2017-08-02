@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Island</title>
+  <title>ISLAND</title>
   <subtitle>record my life</subtitle>
   <link href="/atom.xml" rel="self"/>
   
@@ -9,7 +9,7 @@
   <id>http://x1206125464.com/</id>
   
   <author>
-    <name>Alger</name>
+    <name>音乐通常晚睡</name>
     <email>1206125464@qq.com</email>
   </author>
   
