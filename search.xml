@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[搭建博客（一）：基于Hexo和Github的博客搭建]]></title>
+    <url>%2F2017%2F08%2F01%2Ftest%2F</url>
+    <content type="text"><![CDATA[开始 参考：http://www.jianshu.com/p/701b1095da11http://www.jianshu.com/p/017e01718d41http://www.jianshu.com/p/e99ed60390a8http://blog.csdn.net/crow1108/article/details/50445671http://blog.csdn.net/hustpzb/article/details/8230454/ 环境准备：]]></content>
+      <categories>
+        <category>搭建博客</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>github</tag>
+      </tags>
+  </entry>
+</search>
