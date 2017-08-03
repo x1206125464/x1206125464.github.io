@@ -2,14 +2,13 @@
 <search>
   <entry>
     <title><![CDATA[搭建博客（一）：基于Hexo和Github的博客搭建]]></title>
-    <url>%2F2017%2F08%2F01%2Ftest%2F</url>
-    <content type="text"><![CDATA[开始 参考：http://www.jianshu.com/p/701b1095da11http://www.jianshu.com/p/017e01718d41http://www.jianshu.com/p/e99ed60390a8http://blog.csdn.net/crow1108/article/details/50445671http://blog.csdn.net/hustpzb/article/details/8230454/]]></content>
-      <categories>
-        <category>搭建博客</category>
-      </categories>
+    <url>%2F2017%2F08%2F03%2Fcreate-new-blog%2F</url>
+    <content type="text"><![CDATA[导语： &emsp;&emsp;博客创建之初，还是有必要写一篇自己创建博客的心路历程，好在以后和亲朋好友吹牛逼的时候，说话能有点底气。 &emsp;&emsp;个人在Hexo+Github搭建个人博客上其实并没有什么基础，但是由于网上很多优秀的分享家写了许多教程，让我们这些新手也是可以非常快速的建立起属于自己的一个Island。 &emsp;&emsp;当然自己也希望能加入他们的行列，成为优秀的分享家。 在此特别感谢： &emsp;&emsp;吴小龙同學、cnfeat、Te_Lee、IIssNan、wuchong 小门槛 搭建博客其实很折腾，非常需要耐心，这很重要 也需要一定的学习能力，遇到问题就要绕着弯的去找答案（好好使用搜索引擎） 最好有一些代码基础，这样会容易一些，不过并不是一定需要代码基础（详见上面两条） 开始吧：一、环境准备：1、下载并安装Git这很简单，进入下载页面Git，Download一下，安装一下就可以了。（安装软件最好文件夹分类一下，不然很乱） 2、下载并安装Node.js这也很简单，进入下载页面Node.js，找到Windows Installer下载一下，安装一下就可以了。（电脑版本对应就可以） 3、安装Hexo这里嘛。就有那么一点不同了。差不多进入敲码阶段了。 随便在桌面找个地方右击鼠标。选择Git Bash（前提是已经下载了Git），输入并回车下面指令 npm install -g hexo 如果出现npm WARN deprecated swig@1.4.2: This package is no longer maintained，那并没有太大的影响，继续下面的步骤就好。 如果出现npm ERR! registry error parsing json，那就需要设置npm代理，输入并回车下面指令 npm config set registry http://registry.cnpmjs.org 重新执行上面的安装命令安装一下hexo就可以了。 4、部署Hexo安装完成之后，在你想要的文件下面（比如E:\hexo），右击选择Git Bash，输入并回车下面指令 hexo init hexo会自动建立所需要的所有文件。 然后安装依赖包，输入并回车下面指令 npm install 这样就建立好了本地的hexo博客了！输入并回车下面指令 hexo generate hexo server 接着就可以在浏览器输入localhost:4000，查看自己的本地博客页面了！ 有可能在执行hexo server提示找不到指令，输入并回车下面指令 npm install hexo -server --save 嗯，到这里，本地的博客已经搭建完成了，但是只是本地的，别人是看不到的，不过别急，接着下面的操作。 二、部署到Github：1、注册账号打开Github，注册一下账号，登陆。 2、创建仓库创建一个新的repository，不懂怎么创建自行百度。 这个仓库的名字需要和你的账号对应，格式：your_user_name.github.io 3、获取SSH密钥SSH keys是让本地的Git项目和远程的Github建立联系。 1）先检查一下电脑上是否有SSH keys。输入并回车下面指令 cd ~/. ssh 提示No such file or directory，说明是第一次使用。 2）生成新的SSH keys。输入并回车下面指令 ssh-keygen -t rsa -C &quot;你的邮件地址&quot; -C中的C为大写的C，然后根据提示按三个回车。 看到这样的图，就表示成功了 可以在C:\Users\admin.ssh下，得到两个文件id_rsa和id_rsa.pub。 3）之后就可以添加SSH keys到Github 1、打开本地C:\Users\admin.ssh\id_rsa.pub文件。此文件里面内容为刚才生成人密钥。 如果看不到这个文件，你需要设置显示隐藏文件。 用记事本打开，复制全文。打开SSH keys。Add SSH key，全部粘贴。 4）测试一下 输入并回车下面指令，git@github.com的部分不要修改 ssh -T git@github.com 会反馈 The authenticity of host ‘github.com (207.97.227.239)’ can’t be established.RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.Are you sure you want to continue connecting (yes/no)? 输入yes，就可以看到You’ve successfully authenticated, but GitHub does not provide shell access. 5）设置用户信息 SSH已经链接了。下面只需要完善一下个人信息就可以。输入并回车下面指令 git config --global user.name &quot;你的用户名&quot; git config --global user.email &quot;你的邮箱&quot; 如果以上关于SSH的步骤有错误。可以参考: GitHub Help - Generating SSH Keys GitHub Help - Error Permission denied (publickey) 完成（一）（二）两个步骤。你的个人博客已经完全建立成功了。接下来就是怎么使用了。 关于如何使用呢？ 我们下一篇慢慢介绍。 About me]]></content>
       <tags>
         <tag>hexo</tag>
         <tag>github</tag>
+        <tag>blog</tag>
+        <tag>markdown</tag>
       </tags>
   </entry>
 </search>
