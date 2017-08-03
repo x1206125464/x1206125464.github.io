@@ -103,7 +103,8 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://i.imgur.com/l2pdk29.jpg">
 <meta property="og:image" content="http://i.imgur.com/P82iZPg.png">
-<meta property="og:updated_time" content="2017-08-03T05:21:37.332Z">
+<meta property="og:image" content="http://i.imgur.com/kuZCCDi.png">
+<meta property="og:updated_time" content="2017-08-03T05:39:51.187Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建博客（一）：基于Hexo和Github的博客搭建">
 <meta name="twitter:description" content="导语：  &amp;emsp;&amp;emsp;博客创建之初，还是有必要写一篇自己创建博客的心路历程，好在以后和亲朋好友吹牛逼的时候，说话能有点底气。 &amp;emsp;&amp;emsp;个人在Hexo+Github搭建个人博客上其实并没有什么基础，但是由于网上很多优秀的分享家写了许多教程，让我们这些新手也是可以非常快速的建立起属于自己的一个Island。 &amp;emsp;&amp;emsp;当然自己也希望能加入他们的行列，成为优秀的">
@@ -409,23 +410,23 @@
 <p>&emsp;&emsp;<a href="http://www.jianshu.com/p/701b1095da11" target="_blank" rel="external">吴小龙同學</a>、<a href="http://www.cnfeat.com/" target="_blank" rel="external">cnfeat</a>、<a href="http://www.jianshu.com/p/1e402922ee32/" target="_blank" rel="external">Te_Lee</a>、<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">IIssNan</a>、<a href="http://wuchong.me/" target="_blank" rel="external">wuchong</a></p>
 </blockquote>
 <hr>
-<h2 id="小门槛"><a href="#小门槛" class="headerlink" title="小门槛"></a>小门槛</h2><ul>
+<h1 id="小门槛"><a href="#小门槛" class="headerlink" title="小门槛"></a>小门槛</h1><ul>
 <li>搭建博客其实很折腾，非常需要耐心，这很重要</li>
 <li>也需要一定的学习能力，遇到问题就要绕着弯的去找答案（好好使用<a href="https://www.baidu.com/" target="_blank" rel="external">搜索引擎</a>）</li>
 <li>最好有一些代码基础，这样会容易一些，不过并不是一定需要代码基础（详见上面两条）</li>
 </ul>
-<h2 id="开始吧："><a href="#开始吧：" class="headerlink" title="开始吧："></a>开始吧：</h2><h3 id="一、环境准备："><a href="#一、环境准备：" class="headerlink" title="一、环境准备："></a>一、环境准备：</h3><h4 id="1、下载并安装Git"><a href="#1、下载并安装Git" class="headerlink" title="1、下载并安装Git"></a>1、下载并安装Git</h4><p>这很简单，进入下载页面<a href="https://git-for-windows.github.io/" target="_blank" rel="external">Git</a>，<code>Download</code>一下，安装一下就可以了。（安装软件最好文件夹分类一下，不然很乱）</p>
-<h4 id="2、下载并安装Node-js"><a href="#2、下载并安装Node-js" class="headerlink" title="2、下载并安装Node.js"></a>2、下载并安装Node.js</h4><p>这也很简单，进入下载页面<a href="https://nodejs.org/en/download/" target="_blank" rel="external">Node.js</a>，找到<code>Windows Installer</code>下载一下，安装一下就可以了。（电脑版本对应就可以）</p>
-<h4 id="3、安装Hexo"><a href="#3、安装Hexo" class="headerlink" title="3、安装Hexo"></a>3、安装Hexo</h4><p>这里嘛。就有那么一点不同了。差不多进入敲码阶段了。</p>
+<h1 id="开始吧："><a href="#开始吧：" class="headerlink" title="开始吧："></a>开始吧：</h1><h2 id="一、环境准备："><a href="#一、环境准备：" class="headerlink" title="一、环境准备："></a>一、环境准备：</h2><h3 id="1、下载并安装Git"><a href="#1、下载并安装Git" class="headerlink" title="1、下载并安装Git"></a>1、下载并安装Git</h3><p>这很简单，进入下载页面<a href="https://git-for-windows.github.io/" target="_blank" rel="external">Git</a>，<code>Download</code>一下，安装一下就可以了。（安装软件最好文件夹分类一下，不然很乱）</p>
+<h3 id="2、下载并安装Node-js"><a href="#2、下载并安装Node-js" class="headerlink" title="2、下载并安装Node.js"></a>2、下载并安装Node.js</h3><p>这也很简单，进入下载页面<a href="https://nodejs.org/en/download/" target="_blank" rel="external">Node.js</a>，找到<code>Windows Installer</code>下载一下，安装一下就可以了。（电脑版本对应就可以）</p>
+<h3 id="3、安装Hexo"><a href="#3、安装Hexo" class="headerlink" title="3、安装Hexo"></a>3、安装Hexo</h3><p>这里嘛。就有那么一点不同了。差不多进入敲码阶段了。</p>
 <p>随便在桌面找个地方右击鼠标。选择<code>Git Bash</code>（前提是已经下载了Git），输入并回车下面指令</p>
 <pre><code>npm install -g hexo
 </code></pre><blockquote>
 <p>如果出现<em>npm WARN deprecated swig@1.4.2: This package is no longer maintained</em>，那并没有太大的影响，继续下面的步骤就好。</p>
 <p>如果出现<em>npm ERR! registry error parsing json</em>，那就需要设置npm代理，输入并回车下面指令</p>
 <pre><code>npm config set registry http://registry.cnpmjs.org
-</code></pre></blockquote>
-<p>重新执行上面的安装命令安装一下hexo就可以了。</p>
-<h4 id="4、部署Hexo"><a href="#4、部署Hexo" class="headerlink" title="4、部署Hexo"></a>4、部署Hexo</h4><p>安装完成之后，在你想要的文件下面（比如E:\hexo），右击选择<code>Git Bash</code>，输入并回车下面指令</p>
+</code></pre><p>重新执行上面的安装命令安装一下hexo就可以了。</p>
+</blockquote>
+<h3 id="4、部署Hexo"><a href="#4、部署Hexo" class="headerlink" title="4、部署Hexo"></a>4、部署Hexo</h3><p>安装完成之后，在你想要的文件下面（比如E:\hexo），右击选择<code>Git Bash</code>，输入并回车下面指令</p>
 <pre><code>hexo init
 </code></pre><p>hexo会自动建立所需要的所有文件。</p>
 <p>然后安装依赖包，输入并回车下面指令</p>
@@ -439,11 +440,11 @@ hexo server
 <pre><code>npm install hexo -server --save
 </code></pre></blockquote>
 <p>嗯，到这里，本地的博客已经搭建完成了，但是只是本地的，别人是看不到的，不过别急，接着下面的操作。</p>
-<h3 id="二、部署到Github："><a href="#二、部署到Github：" class="headerlink" title="二、部署到Github："></a>二、部署到Github：</h3><h4 id="1、注册账号"><a href="#1、注册账号" class="headerlink" title="1、注册账号"></a>1、注册账号</h4><p>打开<a href="https://github.com/" target="_blank" rel="external">Github</a>，注册一下账号，登陆。</p>
-<h4 id="2、创建仓库"><a href="#2、创建仓库" class="headerlink" title="2、创建仓库"></a>2、创建仓库</h4><p>创建一个新的repository，不懂怎么创建自行百度。</p>
+<h2 id="二、部署到Github："><a href="#二、部署到Github：" class="headerlink" title="二、部署到Github："></a>二、部署到Github：</h2><h3 id="1、注册账号"><a href="#1、注册账号" class="headerlink" title="1、注册账号"></a>1、注册账号</h3><p>打开<a href="https://github.com/" target="_blank" rel="external">Github</a>，注册一下账号，登陆。</p>
+<h3 id="2、创建仓库"><a href="#2、创建仓库" class="headerlink" title="2、创建仓库"></a>2、创建仓库</h3><p>创建一个新的repository，不懂怎么创建自行百度。</p>
 <p>这个仓库的名字需要和你的账号对应，格式：your_user_name.github.io</p>
 <p><img src="http://i.imgur.com/l2pdk29.jpg" alt="命名规则"></p>
-<h4 id="3、获取SSH密钥"><a href="#3、获取SSH密钥" class="headerlink" title="3、获取SSH密钥"></a>3、获取SSH密钥</h4><p>SSH keys是让本地的Git项目和远程的Github建立联系。</p>
+<h3 id="3、获取SSH密钥"><a href="#3、获取SSH密钥" class="headerlink" title="3、获取SSH密钥"></a>3、获取SSH密钥</h3><p>SSH keys是让本地的Git项目和远程的Github建立联系。</p>
 <p><strong>1）先检查一下电脑上是否有SSH keys。输入并回车下面指令</strong></p>
 <pre><code>cd ~/. ssh
 </code></pre><blockquote>
@@ -476,11 +477,16 @@ git config --global user.email  &quot;你的邮箱&quot;
 <p><a href="https://help.github.com/articles/connecting-to-github-with-ssh/" target="_blank" rel="external">GitHub Help - Generating SSH Keys</a></p>
 <p><a href="https://help.github.com/articles/error-permission-denied-publickey/" target="_blank" rel="external">GitHub Help - Error Permission denied (publickey)</a></p>
 </blockquote>
+<hr>
 <p>完成（一）（二）两个步骤。你的个人博客已经完全建立成功了。接下来就是怎么使用了。</p>
 <p>关于如何使用呢？</p>
 <p>我们下一篇慢慢介绍。</p>
 <hr>
 <p><center><font color="Red"><strong>About me</strong></font></center></p>
+<p><img src="http://i.imgur.com/kuZCCDi.png" alt=""></p>
+<p><center><font color="LightSlateGray"><strong>音乐通常晚睡</strong></font></center></p>
+<p><center><font color="LightSlateGray"><strong>一个热爱音乐的程序员</strong></font></center></p>
+<p><center><font color="LightSlateGray"><strong>没了</strong></font></center></p>
 
       
     </div>
@@ -690,7 +696,7 @@ git config --global user.email  &quot;你的邮箱&quot;
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#导语："><span class="nav-number">1.</span> <span class="nav-text">导语：</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#小门槛"><span class="nav-number">1.1.</span> <span class="nav-text">小门槛</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始吧："><span class="nav-number">1.2.</span> <span class="nav-text">开始吧：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、环境准备："><span class="nav-number">1.2.1.</span> <span class="nav-text">一、环境准备：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、下载并安装Git"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">1、下载并安装Git</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、下载并安装Node-js"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">2、下载并安装Node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、安装Hexo"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">3、安装Hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4、部署Hexo"><span class="nav-number">1.2.1.4.</span> <span class="nav-text">4、部署Hexo</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、部署到Github："><span class="nav-number">1.2.2.</span> <span class="nav-text">二、部署到Github：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、注册账号"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">1、注册账号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、创建仓库"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">2、创建仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、获取SSH密钥"><span class="nav-number">1.2.2.3.</span> <span class="nav-text">3、获取SSH密钥</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#导语："><span class="nav-number">1.</span> <span class="nav-text">导语：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#小门槛"><span class="nav-number">2.</span> <span class="nav-text">小门槛</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开始吧："><span class="nav-number">3.</span> <span class="nav-text">开始吧：</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、环境准备："><span class="nav-number">3.1.</span> <span class="nav-text">一、环境准备：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、下载并安装Git"><span class="nav-number">3.1.1.</span> <span class="nav-text">1、下载并安装Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、下载并安装Node-js"><span class="nav-number">3.1.2.</span> <span class="nav-text">2、下载并安装Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、安装Hexo"><span class="nav-number">3.1.3.</span> <span class="nav-text">3、安装Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、部署Hexo"><span class="nav-number">3.1.4.</span> <span class="nav-text">4、部署Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、部署到Github："><span class="nav-number">3.2.</span> <span class="nav-text">二、部署到Github：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、注册账号"><span class="nav-number">3.2.1.</span> <span class="nav-text">1、注册账号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、创建仓库"><span class="nav-number">3.2.2.</span> <span class="nav-text">2、创建仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、获取SSH密钥"><span class="nav-number">3.2.3.</span> <span class="nav-text">3、获取SSH密钥</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
