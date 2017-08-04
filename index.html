@@ -321,6 +321,295 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://x1206125464.com/2017/08/03/creat-new-blog-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="音乐通常晚睡">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ISLAND">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/03/creat-new-blog-2/" itemprop="url">搭建博客（二）：Hexo的使用</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-03T18:21:54+08:00">
+                2017-08-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/博客搭建/" itemprop="url" rel="index">
+                    <span itemprop="name">博客搭建</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            <!--noindex-->
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/08/03/creat-new-blog-2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count hc-comment-count" data-xid="2017/08/03/creat-new-blog-2/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+              <!--/noindex-->
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="导语："><a href="#导语：" class="headerlink" title="导语："></a>导语：</h1><hr>
+<blockquote>
+<p>&emsp;&emsp;上篇已经介绍了如何部署Hexo和Github所需要的环境，接下来就来说说Hexo怎么使用。</p>
+<p>&emsp;&emsp;一直在说Hexo，什么是Hexo？其实Hexo就是一个博客框架，将支持的类型文件转换成静态Web页面。它不是一个应用，不具备用户界面，想要它动作，需要的是命令行。所以，记住一些常用的命令行就显得尤为必要。不过，想要轻松的玩转它还是非常容易的。</p>
+<p>&emsp;&emsp;在这里，我们还会接触到一个东西叫做markdown，它是文本编辑中一种非常简练的标记语言。可以轻松的让你的文本内容具有一定的格式，不像<em>word</em>那样繁琐，冗余。编辑后的文章非常适合阅读。总之，我现在越来越喜欢它了。</p>
+<p>当然，装逼之余还是要特别感谢：</p>
+<p>&emsp;&emsp;<a href="http://www.jianshu.com/p/701b1095da11" target="_blank" rel="external">吴小龙同學</a>、<a href="http://www.cnfeat.com/" target="_blank" rel="external">cnfeat</a>、<a href="http://www.jianshu.com/p/1e402922ee32/" target="_blank" rel="external">Te_Lee</a>、<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">IIssNan</a>、<a href="http://wuchong.me/" target="_blank" rel="external">wuchong</a></p>
+</blockquote>
+<hr>
+<h1 id="Hexo的认识与基本配置"><a href="#Hexo的认识与基本配置" class="headerlink" title="Hexo的认识与基本配置"></a>Hexo的认识与基本配置</h1><blockquote>
+<p>了解框架非常有助与以后的学习和操作。如果你对前端感兴趣，那么世界的第八大洲在向你招手。</p>
+</blockquote>
+<h2 id="一、认识目录框架"><a href="#一、认识目录框架" class="headerlink" title="一、认识目录框架"></a>一、认识目录框架</h2><p>目录框架<br><br> ├──.deploy &emsp;&emsp;&emsp;&emsp;&emsp;#需要部署的文件<br><br> ├── node_modules &emsp; #Hexo插件<br><br> ├── public &emsp;&emsp;&emsp;&emsp;&emsp; #生成的静态网页文件<br><br> ├── scaffolds &emsp;&emsp;&emsp;&emsp;#模板<br><br> ├── source &emsp;&emsp;&emsp;&emsp;&emsp;#博客正文和其他源文件，404、favicon、CNAME 都应该放在这里<br><br> |&emsp;&emsp;├── _drafts&emsp;&emsp;&emsp;#草稿<br><br> |&emsp;&emsp;└── _posts &emsp;&emsp;&emsp;#文章<br><br> ├── themes &emsp;&emsp;&emsp;&emsp;&emsp;#主题<br><br> ├── _config.yml &emsp;&emsp;&emsp; #全局配置文件<br><br> └── package.json</p>
+<p>其中，常用的是<em>source、themes、_config.yml</em>。</p>
+<p><em>source</em>中存放文章和页面信息。写文章最常用到的文件夹。</p>
+<p><em>themes</em>中存放是主题，也就是博客页面的皮肤。可以到百度上找Hexo的皮肤，有很多很多，如果自己感兴趣，也可以自己制作，不过难度就比较高了。</p>
+<p><em>_config.yml</em>中存放的是配置文件信息。网站主要站点配置都在这里面。</p>
+<h2 id="二、修改配置"><a href="#二、修改配置" class="headerlink" title="二、修改配置"></a>二、修改配置</h2><p>这是我的配置，修改有#号加中文注释的地方就可以。</p>
+<pre><code># Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: ISLAND                         #标题
+subtitle: record my life              #副标题    
+description: 不修电脑                  #站点描述
+author: 音乐通常晚睡                    #作者
+email: 1206125464@qq.com              #电子邮箱
+language: zh-Hans                     #语言，我用的是NexT主题。没有主题填zh-CN
+timezone: Asia/Shanghai
+
+# URL
+## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;
+url:                                  #网址
+root: /                               #根目录
+permalink: :year/:month/:day/:title/  #文章链接格式
+permalink_defaults:
+
+# Directory
+source_dir: Source                    #源文件目录
+public_dir: public                    #生成的网站文件目录
+tag_dir: tags                         #标签目录
+archive_dir: archives                 #存档目录
+category_dir: categories              #分类目录
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md              #新文章标题格式
+default_layout: post                  #默认的模板，包括 post、page、photo、draft
+titlecase: false                      #标题转换成大写
+external_link: true                   #在新选项卡中打开链接
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:                            #语法高亮
+    enable: true                      #是否打开
+    line_number: true                 #显示行号
+    auto_detect: false
+    tab_replace:
+
+# Home page setting
+# path: Root path for your blogs index page. (default = &apos;&apos;)
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+    path: &apos;&apos;
+    per_page: 10
+    order_by: -date
+
+# Category &amp; Tag
+default_category: uncategorized       #默认分类
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10                          #每页文章数
+pagination_dir: page 
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: next                           #主题
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy: 
+    type: git
+    repository: https://github.com/x1206125464/x1206125464.github.io.git
+    branch: master
+</code></pre><p>其中，如下代码一定要正确。</p>
+<pre><code>deploy:
+      type: git
+      repository: https://github.com/x1206125464/x1206125464.github.io.git
+      branch: master
+</code></pre><p>repository部分按如下操作找到。</p>
+<p><img src="http://i.imgur.com/zfTBSZX.png" alt=""></p>
+<p><img src="http://i.imgur.com/P67M6A9.png" alt=""></p>
+<p><img src="http://i.imgur.com/PWsmkrh.png" alt=""></p>
+<blockquote>
+<p><strong>注意：</strong></p>
+<ul>
+<li><p>配置文件的冒号<code>：</code>后面一定要加一个空格，不然会报错的</p>
+</li>
+<li><p>第一次修改配置文件之后，一定要在<code>Git Bash</code>里面输入并回车下面指令</p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre></li>
+<li><p>如果在配置文件里面有中文。就必须用utf8编码格式。可以到网上在线转换（麻烦死了），或者去网上下载一个Sublime text3，永久免费试用的（超级万能，谁用谁知道）。</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="三、打开博客"><a href="#三、打开博客" class="headerlink" title="三、打开博客"></a>三、打开博客</h2><p>接下来就是激动人心的时刻，输入并回车下面指令</p>
+<pre><code>hexo generate
+hexo deploy
+</code></pre><blockquote>
+<p>如果最后提示<em>[info] Deploy done: git</em></p>
+</blockquote>
+<p>那么，登陆你的GitHub,按如下操作打开你的个人博客！</p>
+<p><img src="http://i.imgur.com/3KuGQeB.png" alt=""></p>
+<p><img src="http://i.imgur.com/znxjbRr.png" alt=""></p>
+<p><img src="http://i.imgur.com/dUOQhHq.png" alt=""></p>
+<p>下滚找到：</p>
+<p><img src="http://i.imgur.com/PpJNqPO.png" alt=""></p>
+<p>这样别人就可以看见你的个人博客了。</p>
+<hr>
+<h1 id="Hexo的相关操作"><a href="#Hexo的相关操作" class="headerlink" title="Hexo的相关操作"></a>Hexo的相关操作</h1><p><strong>今天先更新到这里，工作有点忙了。加上个人身体不是非常舒服。相关指令可以自行研究。</strong></p>
+<p><strong>接下来会慢慢讲如何写文章，如何修改皮肤。</strong></p>
+<hr>
+<p><center><font color="Red"><strong>About me</strong></font></center></p>
+<p><center><img src="http://i.imgur.com/kuZCCDi.png" alt=""></center></p>
+<p><center><font color="LightSlateGray"><strong>音乐通常晚睡</strong></font></center></p>
+<p><center><font color="LightSlateGray"><strong>一个热爱音乐的程序员</strong></font></center></p>
+<p><center><font color="LightSlateGray"><strong>没了</strong></font></center></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://x1206125464.com/2017/08/03/create-new-blog/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -340,7 +629,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/08/03/create-new-blog/" itemprop="url">搭建博客（一）：基于Hexo和Github的博客搭建</a></h1>
+                <a class="post-title-link" href="/2017/08/03/create-new-blog/" itemprop="url">搭建博客（一）：Hexo和Github的环境搭建</a></h1>
         
 
         <div class="post-meta">
@@ -362,6 +651,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/博客搭建/" itemprop="url" rel="index">
+                    <span itemprop="name">博客搭建</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -567,12 +878,21 @@ git config --global user.email  &quot;你的邮箱&quot;
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
           
 
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
           
 
           
